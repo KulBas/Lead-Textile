@@ -1,0 +1,595 @@
+.wrapper{
+    float:left;
+    width:100%;
+}
+.landingPicturesNewInTitle h2:hover{
+    color:white;
+    cursor: default;
+}
+.landingPicturesNewIn:hover{
+    cursor:default;
+}
+.landingPicturesNewInTitleSkat h2:hover{
+    color:#1da9e4;
+    cursor: pointer;
+}
+.landingPicturesNewInSkat:hover{
+    cursor:pointer;
+}
+.buttonTop{
+    margin-top: 11px;
+    margin-left: 57px;
+    width: 161px;
+    height: 38px;
+    background: url(/images/call_back_top.png);
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px #989898;
+    cursor:pointer;
+}
+.buttonTop:hover{
+    background: url(/images/call_back_top.png);
+    background-position: -162px 0px;
+}
+.buttonTop:active{
+    background: url(/images/call_back_top.png);
+    background-position: -324px 0px;
+}
+/***********************knopki******************************/
+.obrZvonokover, .zaprosCalcover,
+.zaprosCenyover{
+    z-index:100;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    text-align: center
+}
+.obrZvonokover:after, .zaprosCalcover:after, .zaprosCenyover:after{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+    content: ''
+}
+/* Added for IE<9 compatibility */
+.obrZvonokpopup_ie, .zaprosCalcpopup_ie,
+.zaprosCenypopup_ie{
+    background: #000;
+    opacity: .7;
+    filter: alpha(opacity=70)
+}
+.obrZvonokpopup, .zaprosCalcpopup,
+.zaprosCenypopup {
+    /* border: 1px solid #F5F2F2; */
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    position: relative;
+    /* background: -webkit-linear-gradient(top, #EEEEEE, #C7C7C7); */
+    vertical-align: middle}
+.obrZvonokclose, .zaprosCalcclose,
+.zaprosCenyclose{
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    width: 12px;
+    height: 12px;
+    padding: 8px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 0 2px 2px 2px rgba(0,0,0,.4),
+    0 3px 3px     rgba(0,0,0,.4);
+    box-shadow:         inset 0 2px 2px 2px rgba(0,0,0,.4),
+    0 3px 3px     rgba(0,0,0,.4);
+    cursor: pointer;
+    background: #fff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+    color: #444;
+    text-decoration: none;
+    font-weight: bold
+}
+.popup__close:hover{
+    background: #ddd
+}
+/*end*/
+/***********************knopka zaprosa ceny******************************/
+.zaprosCenyover {
+    z-index:100;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    text-align: center
+}
+.zaprosCenyover:after {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+    content: ''
+}
+/* Added for IE<9 compatibility */
+.zaprosCenypopup_ie {
+    background: #000;
+    opacity: .7;
+    filter: alpha(opacity=70)
+}
+.zaprosCenypopup {
+    /* border: 1px solid #F5F2F2; */
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    position: relative;
+    /* background: -webkit-linear-gradient(top, #EEEEEE, #C7C7C7); */
+    vertical-align: middle}
+.zaprosCenyclose {
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    width: 12px;
+    height: 12px;
+    padding: 8px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 0 2px 2px 2px rgba(0,0,0,.4),
+    0 3px 3px     rgba(0,0,0,.4);
+    box-shadow:         inset 0 2px 2px 2px rgba(0,0,0,.4),
+    0 3px 3px     rgba(0,0,0,.4);
+    cursor: pointer;
+    background: #fff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+    color: #444;
+    text-decoration: none;
+    font-weight: bold
+}
+.popup__close:hover {
+    background: #ddd
+}
+/*end*/
+.chechSpanButtonsPos{
+    margin-top: 60px;
+}
+.chechSpanBenefitTitle{
+    font-family: Trebuchet Ms;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-style:italic;
+}
+.chechSpanBigBenefits, .chechSpanDescriptionAndVideo{
+    float:left;
+    width:100%;
+}
+.chechSpanBigBenefits{
+    height: 100px;
+    margin-top: 30px;
+}
+.chechSpanDescriptionAndVideo{
+    height: 395px;
+}
+.chechSpanGalleryLeft{
+    width: 395px;
+    margin-left: 8px;
+}
+.chechSpanGalleryRight{
+    width: 556px;
+}
+.chechSpanGalleryLeft, .chechSpanGalleryRight,
+.chechSpanBigBenefitsIn, .chechSpanBigBenefitsInFoto,
+.chechSpanBigBenefitsInText, .chechSpanDescriptionAndVideoLeft,
+.chechSpanDescriptionAndVideoRight{
+    float:left
+}
+.chechSpanBigBenefitsIn{
+    width: 248px;
+    height: 100%;
+}
+.chechSpanBigBenefitsInFoto{
+    width:60px;
+}
+.chechSpanBigBenefitsInText{
+    width: 163px;
+    height: 100%;
+    margin-left: 10px;
+}
+.chechSpanBigBenefitsInTextDesc{
+    margin-top: 4px;
+}
+.chechSpanBigBenefitsInTextDesc span{
+    font-size: 13px;
+}
+.chechSpanBigBenefitsInTextTitle{
+    margin-top: 4px;
+
+}
+.chechSpanDescriptionAndVideoLeft{
+    width: 440px;
+    height:100%;
+}
+.chechSpanDescriptionAndVideoRight{
+    width: 520px;
+    height:100%;
+}
+.chechSpanTitle, .landingPicChechModelSpan{
+    width:100%;
+    height: 46px;
+    float: left;
+    font-family: 'Trebuchet Ms';  font-weight: normal;
+    font-size: 25px;  color: #000;
+    text-align: center;
+    margin-top: 48px;
+    font-style:italic;
+}
+.posButtonGetCalculation:hover, .getCalcSkat:hover{
+    background: url(/images/Buttons/get_calculation.png);
+    background-position: -162px 0px;
+    box-shadow: 0 2px 5px #BABABA;
+}
+.posButtonGetCalculation:active, .getCalcSkat:active{
+    background: url(/images/Buttons/get_calculation.png);
+    background-position: -324px 0px;
+    box-shadow: 0 2px 5px #BABABA;
+}
+.posButtonGetCalculation, .buttonObrZvonokMini, .getCalcSkat{
+    cursor:pointer;
+    border-radius:7px;
+    width: 161px;
+    height: 38px;
+    border: none;
+    box-shadow: 0 2px 5px #BABABA;
+    float: left;
+    margin-top: 15px;
+}
+
+.posButtonGetCalculation, .getCalcSkat{
+    background: url(/images/Buttons/get_calculation.png);
+    margin-left: 92px;
+}
+.buttonObrZvonokMini:active{
+    background: url(/images/Buttons/get_call.png);
+    background-position: -324px 0px;
+    box-shadow: 0 2px 5px #BABABA;
+}
+.buttonObrZvonokMini:hover{
+    background: url(/images/Buttons/get_call.png);
+    background-position: -162px 0px;
+    box-shadow: 0 2px 5px #BABABA;
+}
+.buttonObrZvonokMini{
+    background: url(/images/Buttons/get_call.png);
+    margin-left: 18px;
+}
+
+.buttonObrZvonokBig, .skattoggle{
+    border-radius:7px;
+    width: 171px;
+    height: 40px;
+    box-shadow: 0 2px 5px #BABABA;
+    float: left;
+    cursor: pointer;
+}
+.buttonObrZvonokBig:hover{
+    background: url(/images/Consult.png);
+    background-position: -172px 0px;
+    box-shadow: 0 2px 5px #BABABA;
+}
+.buttonObrZvonokBig:active{
+    background: url(/images/Consult.png);
+    background-position: -344px 0px;
+    box-shadow: 0 2px 5px #BABABA;
+}
+.buttonObrZvonokBig{
+    background: url(/images/Consult.png);
+    margin-left: 20px;
+}
+.skattoggle{
+    background: url(/images/Buttons/get_order.png);
+    margin-left: 89px;
+}
+.skattoggle:hover{
+    background: url(/images/Buttons/get_order.png);
+    background-position: -172px 0px;
+    box-shadow: 0 2px 5px #BABABA;
+}
+.skattoggle:active{
+    background: url(/images/Buttons/get_order.png);
+    background-position: -344px 0px;
+    box-shadow: 0 2px 5px #BABABA;
+}
+.chechRestModel{
+    width:100%;
+    float:left;
+    height: 500px;
+    border: 2px solid #63A5F9;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+.chechRestModelTitle, .chechRestModelDescColors{
+    width:100%;
+    font-family: 'Trebuchet Ms';  font-size: 24px;  text-align: center;
+    margin-bottom: 20px;
+    float: left;
+    margin-top: 10px;
+}
+.chechRestModelFoto{
+    width:200px;
+    height: 345px;
+    float:left;
+    margin-left: 40px;
+}
+.chechRestModelDesc{
+    width: 600px;
+    float:left;
+    height: 345px;
+    margin-left: 70px;
+}
+.chechRestModelDescColors p{
+    font-size: 20px;
+    text-align:left;
+    margin-bottom: 11px;
+}
+.chechRestModelDescColorsFoto{
+    width: 100%;
+    float: left;
+}
+.chechRestPic{
+    float: left;
+
+    width: 80px;
+    margin-left: 20px;
+}
+.chechRestPic img{
+    width: 75px;
+    margin-bottom: 2px;
+    box-shadow: 0 2px 6px rgb(150, 150, 150);
+}
+.chechRestPic span{
+    font-size:12px;
+    margin-top: 27px;
+}
+.chechRestModelDescButtons, .chechRestSchema,
+.chechRestModelDescText{
+    /* float:left; */
+    width:100%;
+}
+.chechSpanTitleRest{
+    margin-top: 10px;
+
+    font-style:italic;
+    margin-bottom: 17px;
+}
+.chechRestSchema2{
+    margin-bottom: 30px;
+    margin-top: -20px;
+}
+
+.landingPicturesNewInJurChech{
+    background: url(/images/chehli-na-stylia/chehli-na-stulia-juravinka.png);
+}
+.landingPicturesNewInGabardinChech{
+    background: url(/images/chehli-na-stylia/chehli-na-stulia-gabardin.png);
+}
+.landingPicturesNewInRichChech{
+    background: url(/images/chehli-na-stylia/chehli-na-stulia-richard.png);
+}
+.landingPicturesNewInSatenChech{
+    background: url(/images/chehli-na-stylia/chehli-na-stulia-saten.png);
+}
+.blueSpan{
+    color:#1da9e4;
+    font-weight:bold;
+}
+.whiteSpan{
+    color:#FFF;
+    font-weight:bold;
+}
+.spandexAction{
+    background: #66ccf0;
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 583px;
+    height: 48px;
+    padding: 7px 10px;
+    margin-left: -18px;
+}
+.landingColGab{
+    float: left;
+    width: 119px;
+    margin-left:19px;
+    margin-top:10px;
+    height: 69px;
+}
+.landingColGab span{
+    float: left;
+    margin-left: 40px;
+    font-style: italic;
+    margin-top: 2px;
+    font-weight: bold;
+    font-family: 'Trebuchet Ms';
+    font-size: 14px;
+}
+.chechInfo{
+    margin-top:20px;
+}
+.chechInfoIn{
+    margin-left: 15px;
+}
+.spanGotChechRest{
+    font-size: 17px;
+    text-align: center;
+}
+.spanGotMini{
+    font-size: 14px;
+    text-align: center;
+}
+.chechRestModelsPhoto{
+    width: 100px;
+    height: 100px;
+}
+.landingPicChechRestSpan{
+    margin-left: 23px!important;
+}
+.landingPicChechRest{
+    width: 69px;
+}
+.sigplus-test{
+    margin-bottom: 40px;
+}
+.landingPicChechModel{
+    width: 104px;
+    margin-left: 17px;
+}
+.landingPicChechModelSpan{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 2px;
+    height:30px;
+}
+.landingColGab img { border: 2px solid #CACACA;}
+.infotextLastInSpand li{
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-top: 5px;
+}
+.infotextStyleSpand{
+    line-height: 1.3;
+
+}
+.infotextLastInSpand{
+    height:1400px;
+}
+.infotextTitleSpand{
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:19px;
+    display: inline-block;
+    margin-left: 54px;
+}
+.cheaptoggle{
+    font-size: 12px;
+    margin-left: 39px;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 1px dashed rgb(82, 82, 82);
+}
+.cheaptoggle:hover{
+    color:#1da9e4;;
+}
+.chechSpanPrice{
+    width:100%;
+    height: 79px;
+}
+.cheapover {
+    z-index:100;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    text-align: center
+}
+.cheapover:after {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+    content: ''
+}
+/* Added for IE<9 compatibility */
+.cheappopup_ie {
+    background: #000;
+    opacity: .7;
+    filter: alpha(opacity=70)
+}
+.cheappopup {
+    /* border: 1px solid #F5F2F2; */
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    position: relative;
+    /* background: -webkit-linear-gradient(top, #EEEEEE, #C7C7C7); */
+    vertical-align: middle}
+.landingsChechTopImgPrice{
+    position:absolute;
+    margin-top: 275px;
+    height: 20px;
+    width: 300px;
+    text-align: center;
+}
+.landingsChechTopImgPrice p{
+    font-style: italic;  font-family: 'Trebuchet Ms';
+    font-size: 15px;
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.inFormString2{
+    width:350px;
+}
+.actions {
+    background: url('/images/ActionBackground.png');
+    width: 100%;
+    height: 142px;
+    margin-bottom: 35px;
+    margin-top: -10px;
+}
+
+.actions p {
+    font-family: 'Trebuchet Ms';
+    font-weight: normal;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 22px;
+    text-align: center;
+    color: white;
+    padding-bottom: 25px;
+}
+
+.actions p:first-child {
+    font-size: 19px;
+    padding: 20px 0 9px 0;
+}
+.lmCol{
+    float:left;
+    width: 220px;
+    margin-right: 26px;
+}
+.lmLine > :last-child{
+    margin-right:0px;
+}
+.lmCol img{
+    width:220px;
+    box-shadow: 1px 2px 4px;
+    margin-bottom: 9px;
+}
+.lmCol p{
+    padding-left: 5px;
+}
+.lmLine{
+    width:100%;
+    height: 170px;
+    margin-top: 94px;
+}
